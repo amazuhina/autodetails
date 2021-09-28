@@ -1,0 +1,90 @@
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+  }
+
+
+  .head {
+
+    &__title {
+      font-size: 48px;
+      font-weight: 500;
+      padding: 50% 0 100px;
+      max-width: 800px;
+      margin: 0;
+    }
+    &__phone {
+      font-size: 20px;
+    }
+  }
+
+
+  .about-us {
+    padding-top: 100px;
+    &__box {
+      max-width: 695px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  &__inner {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__text {
+    margin-bottom: 0;
+    max-width: 60%;
+
+  }
+}
+
+  .products {
+    padding-top: 100px;
+    &__title {
+      margin-bottom: 60px;
+    }
+    &__description {
+      padding-bottom: 46px;
+      margin-bottom: 40px;
+    }
+    &__item {
+      width: 20%;
+      min-height: 277px;
+      padding: 0 17px;
+        .services__item-inner {
+          margin: 10px 0;
+          padding: 35px 60px 5px;
+          min-height: 255px;
+        }
+      }
+    }
+  .partners {
+    padding-top: 100px;
+  }
+  .slick-arrow {
+    visibility: visible;
+  }
+  .order {
+    padding-top: 100px;
+    &-title {
+      margin-bottom: 40px;
+    }
+    &__items {
+      margin: 0 auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    &__item-text {
+      margin: 26px 0;
+      font-size: 18px;
+      line-height: 24px;
+    }
+  }
+  .form {
+    padding-top: 100px;
+  }
+}

@@ -1,0 +1,126 @@
+@media (min-width: 640px) {
+  .container {
+    padding: 0 30px;
+  }
+
+
+
+
+.head {
+  &__title {
+    line-height: 28px;
+    font-size: 36px;
+    font-weight: 600;
+    padding: 60% 0 100px;
+    max-width: 600px;
+  }
+}
+
+
+
+
+  .products {
+    padding: 25px 0 0;
+    &__title {
+      margin-bottom: 47px;
+    }
+    &__description {
+      font-size: 24px;
+      padding-bottom: 38px;
+      margin-bottom: 31px;
+    }
+    &__items {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 -30px;
+    }
+    &__item {
+      width: 50%;
+      &:nth-child(even) {
+        border-left: none;
+      }
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+  }
+
+  .order {
+    &-title {
+      margin-bottom: 40px;
+    }
+    &__item {
+
+    }
+    &__item-inner {
+
+    }
+    &__item-img {
+
+    }
+    &__item-text {
+
+      margin: 26px 0;
+      font-size: 18px;
+      line-height: 24px;
+
+    }
+  }
+
+
+  .partners {
+    padding: 25px 0 0;
+    &__title {
+      margin-bottom: 47px;
+    }
+  }
+
+  .top-slider {
+    &__item {
+      min-width: 386px;
+    }
+    &__title {
+      font-size: 50px;
+      line-height: 60px;
+      padding: 150px 0 15px;
+      margin: 0 auto 30px;
+      max-width: 520px;
+    }
+    &__text {
+      margin: 76px auto;
+    }
+    &__btn {
+      display: block;
+      margin: 0 auto 113px;
+      font-size: 18px;
+      background-color: $main-color;
+      color: $bc-color;
+      padding: 15px 45px;
+      border: none;
+      border-radius: 3px;
+    }
+    .slick-dots {
+      bottom: 50px;
+    }
+    .slick-arrow {
+      width: 45px;
+      height: 45px;
+      border: none;
+      position: absolute;
+      right: 0;
+      z-index: 5;
+    }
+    .slick-prev {
+      background-color: $dark-grey-color;
+      top: 50%;
+      left: 0;
+    }
+    .slick-next {
+      background-color: $dark-grey-color;
+      top: 50%;
+      right: 0;
+    }
+  }
+}
+
+

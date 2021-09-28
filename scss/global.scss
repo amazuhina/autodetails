@@ -1,0 +1,93 @@
+@import "vars";
+@import "fonts";
+
+html {
+  box-sizing: border-box;
+}
+
+
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+ul li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+button {
+  padding: 0;
+  cursor: pointer;
+}
+
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+body {
+  min-width: 320px;
+  overflow-x: hidden;
+  font-family: 'Roboto-Regular', 'sans-serif';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: $light-grey-color;
+}
+
+
+.container {
+  padding: 0 20px;
+}
+
+
+.title {
+  font-size: 24px;
+  line-height: 28px;
+  color: $dark-grey-color;
+  font-weight: 700;
+  padding-bottom: 28px;
+  text-align: center;
+  /* delete ??? */
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    height: 8px;
+    background-color: $main-color;
+    bottom: 0;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    animation: underline 0.5s;
+    width: 50px;
+  }
+}
+
+
+@media (min-width: 640px) {
+  .title {
+    font-size: 48px;
+    line-height: 56px;
+  }
+}
+
+
+@keyframes underline {
+  from {
+     width: 1px;
+    }
+
+  to {
+    width: 50px;
+  }
+}

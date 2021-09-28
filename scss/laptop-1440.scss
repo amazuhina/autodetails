@@ -1,0 +1,38 @@
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1320px;
+  }
+
+
+
+
+  .about-us {
+    &__inner {
+      padding: 0 80px;
+    }
+    &__box {
+      max-width: 1020px;
+    }
+  }
+  .order {
+    &-title {
+      margin-bottom: 40px;
+    }
+    &__item {
+
+    }
+    &__item-inner {
+
+    }
+    &__item-img {
+
+    }
+    &__item-text {
+
+      margin: 26px 0;
+      font-size: 18px;
+      line-height: 24px;
+
+    }
+  }
+}

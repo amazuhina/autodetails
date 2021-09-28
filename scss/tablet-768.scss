@@ -1,0 +1,104 @@
+@media (min-width: 768px) {
+  .container {
+    padding: 0 40px;
+  }
+
+
+  .header {
+    &__body {
+      height: 80px;
+    }
+    &__logo {
+      flex: 0 0 60px;
+    }
+    &__burger {
+      display: none;
+    }
+    &__menu {
+      position: relative;
+      top: 0;
+      left: 0;
+      width: 65%;
+      height: 100%;
+      overflow: auto;
+      padding: 15px 0 0 0;
+    }
+    &__list {
+      display: flex;
+      position: relative;
+      z-index: 2;
+      justify-content: flex-end;
+      & li {
+        list-style: none;
+        margin: 0px 0px 0px 20px;
+      }
+    }
+    &__link {
+      font-size: 18px;
+    }
+    &__phone {
+      font-size: 16px;
+      width: auto;
+    }
+  }
+
+
+  .about-us {
+    text-align: left;
+    &__inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &__box {
+      max-width: 427px;
+    }
+    &__text {
+      margin-bottom: 0;
+    }
+  }
+
+
+  .products {
+    padding: 50px 0 0;
+    &__title {
+      margin-bottom: 30px;
+    }
+    &__items {
+      margin: 0 -40px;
+    }
+    &__item {
+      min-height: 334px;
+      padding: 0 65px;
+      &:hover {
+        padding: 0 18px;
+        .services__item-inner {
+          padding: 35px 60px 5px;
+          min-height: 288px;
+        }
+      }
+    }
+  }
+  .order {
+    &-title {
+      margin-bottom: 40px;
+    }
+    &__item {
+
+    }
+    &__item-inner {
+
+    }
+    &__item-img {
+
+    }
+    &__item-text {
+
+      margin: 26px 0;
+      font-size: 18px;
+      line-height: 24px;
+
+    }
+  }
+}
+
