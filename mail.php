@@ -9,25 +9,18 @@ $phone = $_POST['user_phone'];
 $email = $_POST['user_email'];
 $msg = $_POST['user_msg'];
 
-//$mail->SMTPDebug = 3;                               // Enable verbose debug output
+$mail->isSMTP();
+$mail->Host = 'smtp.mail.ru';
+$mail->SMTPAuth = true;
+$mail->Username = 'avtozapchastin1@mail.ru';
+$mail->Password = 'cbsg5u4n0wuvgHpiL5fz';
+$mail->SMTPSecure = 'ssl';
+$mail->Port = 465;
 
-$mail->isSMTP();                                      // Set mailer to use SMTP
-$mail->Host = 'smtp.mail.ru';  																							// Specify main and backup SMTP servers
-$mail->SMTPAuth = true;                               // Enable SMTP authentication
-$mail->Username = 'avtozapchastin1@mail.ru'; // Ваш логин от почты с которой будут отправляться письма
-$mail->Password = 'cbsg5u4n0wuvgHpiL5fz'; // Ваш пароль от почты с которой будут отправляться письма
-$mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
-$mail->Port = 465; // TCP port to connect to / этот порт может отличаться у других провайдеров
+$mail->setFrom('avtozapchastin1@mail.ru'); // от кого
+$mail->addAddress('makcysha@mail.ru');     // Кому
 
-$mail->setFrom('avtozapchastin1@mail.ru'); // от кого будет уходить письмо?
-$mail->addAddress('makcysha@mail.ru');     // Кому будет уходить письмо
-//$mail->addAddress('ellen@example.com');               // Name is optional
-//$mail->addReplyTo('info@example.com', 'Information');
-//$mail->addCC('cc@example.com');
-//$mail->addBCC('bcc@example.com');
-//$mail->addAttachment('/var/tmp/file.tar.gz');         // Add attachments
-//$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
-$mail->isHTML(true);                                  // Set email format to HTML
+$mail->isHTML(true);
 
 $mail->Subject = 'Заявка с сайта';
 $mail->Body    = '' .$name . ' оставил заявку, его телефон ' .$phone. '<br>Почта этого пользователя: ' .$email.
